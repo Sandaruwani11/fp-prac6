@@ -48,7 +48,7 @@ object StudentRecord {
 
     while (!validInput) {
       println("Enter student's name:")
-      name = StdIn.readLine().trim
+      name = StdIn.readLine()
 
       println("Enter student's marks:")
       marks = StdIn.readInt()
