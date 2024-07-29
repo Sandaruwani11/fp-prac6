@@ -1,6 +1,6 @@
 import scala.io.StdIn
 
-object StudentRecordManager {
+object StudentRecord {
 
   def getStudentInfo(): (String, Int, Int, Double, Char) = {
     println("Enter student's name:")
@@ -40,7 +40,7 @@ object StudentRecordManager {
     }
   }
 
-  def getStudentRetry(): (String, Int, Int, Double, Char) = {
+  def getStudentInfoWithRetry(): (String, Int, Int, Double, Char) = {
     var validInput = false
     var name = ""
     var marks = 0
@@ -74,7 +74,7 @@ object StudentRecordManager {
   }
 
   def main(args: Array[String]): Unit = {
-    val studentRecord = getStudentRetry()
+    val studentRecord = getStudentInfoWithRetry()
     printStudentRecord(studentRecord)
   }
 }
