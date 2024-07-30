@@ -27,7 +27,7 @@ object WarehouseInventory {
     inventory.isEmpty
   }
 
- def mergeInventories(inv1: Inventory, inv2: Inventory): Inventory = {
+  def mergeInventories(inv1: Inventory, inv2: Inventory): Inventory = {
     inv1 ++ inv2.map { case (id, product) =>
       id -> inv1.get(id).map { existingProduct =>
         Product(
