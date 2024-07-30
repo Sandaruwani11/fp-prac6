@@ -11,8 +11,8 @@ object WarehouseInventory {
   )
 
   val inventory2: Inventory = Map(
-    102 -> Product(102, "ProductB", 3, 30.00),
-    104 -> Product(104, "ProductD", 15, 12.00)
+    102 -> Product(102, "ProductE", 3, 30.00),
+    104 -> Product(104, "ProductF", 15, 12.00)
   )
 
   def getProductNames(inventory: Inventory): List[String] = {
