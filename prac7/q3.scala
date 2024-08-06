@@ -3,7 +3,7 @@ object FilterPrime {
     def isPrime(n: Int): Boolean = {
       if (n <= 1) false
       else if (n == 2) true
-      else !(2 to Math.sqrt(n).toInt).exists(i => n % i == 0)
+      else !(2 until n).exists(i => n % i == 0)
     }
 
     numbers.filter(num => isPrime(num))
