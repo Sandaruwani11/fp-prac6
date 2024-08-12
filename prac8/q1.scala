@@ -20,7 +20,8 @@ object CaesarCipher {
   }
 }
 
-object Main extends App {
+object Main {
+  def main(args: Array[String]): Unit = {
   val text = "Hello, World!"
   val shift = 1
 
@@ -29,4 +30,5 @@ object Main extends App {
 
   val decryptedText = CaesarCipher.cipher(encryptedText, shift, CaesarCipher.decrypt)
   println(s"Decrypted Text: $decryptedText")
+  }
 }
